@@ -16,6 +16,93 @@
 
 <body>
 
+  <div class="page">
+    <header>
+      <h1>avalie a sua mentoria</h1>
+      <P>Chegou a hora de avaliar o seu mentor. Bora lá?</P>
+      <img src="./images/balloon.png"
+        alt="imagem de um balão de opinião com cinco estrelas dentro simbolizando avaliação.">
+    </header>
+    <form id="assessement-form">
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend class="header-legend">
+            Informações pessoais
+          </legend>
+
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="assess-name">Nome</label>
+              <input type="text" id="assess-name">
+            </div>
+            <div class="input-wrapper">
+              <label for="assess-last-name">Sobrenome</label>
+              <input type="text" id="assess-last-name">
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="assess-email">Email <span>(digite um email válido)</span></label>
+            <input type="text" id="assess-email">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend class="header-legend">
+            Informações do mentor
+          </legend>
+
+          <div class="select-wrapper">
+            <label for="assess-mentor"></label>
+            <select id="assess-mentor">
+              <option value="mentor-01">Mentor 01</option>
+              <option value="mentor-02">Mentor 02</option>
+              <option value="mentor-03">Mentor 03</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="assess-feedback">Feedback sobre o mentor</label>
+            <textarea id="assess-feedback"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="assess-doubt">
+            <label for="assess-doubt">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend class="header-legend">
+            Agendando próxima mentoria
+          </legend>
+
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="assess-date">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="assess-date">
+            </div>
+            <div class="input-wrapper">
+              <label for="assess-start">Das</label>
+              <input type="time" id="assess-start">
+            </div>
+            <div class="input-wrapper">
+              <label for="assess-finish">Até</label>
+              <input type="time" id="assess-finish">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="buttons-wrapper">
+        <button type="submit">salvar</button>
+      </div>
+    </form>
+  </div>
+
 </body>
 
 </html>
